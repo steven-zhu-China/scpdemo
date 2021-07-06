@@ -1,0 +1,9 @@
+applications:
+- name: scpdemo
+  path: target/scpdemo-0.0.1-SNAPSHOT.war
+  buildpack: java_buildpack
+  timeout: 300
+  memory: 1024M
+  services:
+      - odata-hdi
+      - odata-schema
